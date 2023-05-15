@@ -39,7 +39,7 @@ interface Session {
             val bridge: String? = null,
             val key: String? = null,
             val protocol: String = "wc",
-            val version: Int = 2
+            val version: Int = 1
     ) {
         fun toWCUri() = "wc:$handshakeTopic@$version?bridge=${URLEncoder.encode(bridge, "UTF-8")}&key=$key"
 

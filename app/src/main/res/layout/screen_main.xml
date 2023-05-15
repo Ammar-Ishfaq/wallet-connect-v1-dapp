@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.shahjad.walletconnectlibadd.MainActivity">
+    tools:context="com.ammar.walletconnectlibadd.MainActivity">
 
     <TextView
         android:id="@+id/screen_main_status"
@@ -17,7 +17,7 @@
         android:id="@+id/screen_main_response"
         android:layout_width="wrap_content"
         android:layout_height="64dp"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/screen_main_connect_button"
@@ -38,4 +38,16 @@
         android:layout_height="64dp"
         android:text="Disonnect"
         android:visibility="gone" />
+
+    <Button
+        android:id="@+id/screen_main_connect_button_sequence"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:text="Connect with sequence" />
+    <Button
+        android:id="@+id/screen_main_connect_button_qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:text="Connect with qr_code" />
+
 </LinearLayout>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">WalletConnect Kotlin Example</string>
+    <string name="scan_your_wallet_to_connect_with_wallet_connect">scan to connect with wallet connect</string>
+    <string name="qr_code">QR Code</string>
 </resources>

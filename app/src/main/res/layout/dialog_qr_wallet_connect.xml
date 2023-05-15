@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--on below line we are creating
+        a text for heading of our app-->
+    <TextView
+        android:id="@+id/idTVHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="@dimen/_8sdp"
+        android:gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:text="@string/scan_your_wallet_to_connect_with_wallet_connect"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+    <!--We are using this image
+        view to display our QR code-->
+    <ImageView
+        android:layout_below="@+id/idTVHeading"
+        android:id="@+id/idIVQrcode"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:contentDescription="@string/qr_code" />
+
+    <!--Edit text to enter text
+        for creating a QR code-->
+    <EditText
+        android:id="@+id/idEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVQrcode"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:visibility="gone"
+        tools:hint="Enter your message" />
+
+    <!--Button for creating a QR code-->
+    <Button
+        android:id="@+id/idBtnGenerateQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        tools:text="Generate QR Code" />
+
+</RelativeLayout>
